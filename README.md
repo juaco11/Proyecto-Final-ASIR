@@ -50,12 +50,12 @@ Sigue estos pasos para ejecutar el proyecto en local:
   1. Clonar el repositorio: git clone [https://github.com/TU_USUARIO/AgroChain.git](https://github.com/TU_USUARIO/AgroChain.git)
 
   2. Abrir en Visual Studio: Abre el archivo Fruteria.sln.
-  3. 
-  4. Configurar Inicio múltiple: Haz clic derecho en la Solución -> Propiedades -> Proyecto de inicio -> Varios proyectos de inicio.
+     
+  3. Configurar Inicio múltiple: Haz clic derecho en la Solución -> Propiedades -> Proyecto de inicio -> Varios proyectos de inicio.
     · Fruteria.API: Iniciar.
     · Fruteria.WebAgricultor: Iniciar.
 
-  4.Ejecutar: Pulsa F5. La base de datos se creará automáticamente.
+  4. Ejecutar: Pulsa F5. La base de datos se creará automáticamente.
 
 
 Probando con el móvil:
