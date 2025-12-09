@@ -38,7 +38,7 @@ Capturas de pantalla:
 
   2. Panel del Transportista
   Registro de condiciones del viaje (temperatura, humedad y golpes).
-(Aquí puedes subir una imagen del formulario del camión)
+  ![Panel Transportista](captura_transporte.png)
 
   3. Vista del Cliente (Timeline)
   Lo que ve el consumidor al escanear el QR.
