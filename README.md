@@ -34,7 +34,7 @@ Arquitectura del sistema:
 Capturas de pantalla:
   1. Panel del Agricultor
   El agricultor registra el origen y cantidad. El sistema genera un QR único.
-(Aquí puedes subir una imagen de tu pantalla verde con el QR)
+  ![Panel Agricultor](img/captura_agricultor.png)
 
   2. Panel del Transportista
   Registro de condiciones del viaje (temperatura, humedad y golpes).
