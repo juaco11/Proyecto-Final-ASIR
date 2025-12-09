@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "Fruteria.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Fruteria.WebAgricultor\\Fruteria.WebAgricultor.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
