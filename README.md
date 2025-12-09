@@ -13,7 +13,7 @@ Características principales:
 
 
 Tecnologías utilizadas:
-- Este proyecto ha sido desarrollado en Visual Studio 2022 siguiendo una arquitectura de N-Capas:
+  Este proyecto ha sido desarrollado en Visual Studio 2022 siguiendo una arquitectura de N-Capas:
   - Backend: ASP.NET Core Web API (.NET 8).
   - Frontend: ASP.NET Core Razor Pages + Bootstrap 5.
   - Base de datos: SQLite + Entity Framework Core.
@@ -23,7 +23,7 @@ Tecnologías utilizadas:
 
 
 Arquitectura del sistema:
-- La solución se divide en tres proyectos:
+  La solución se divide en tres proyectos:
   1. Fruteria.API: El cerebro del sistema. Gestiona la base de datos blockchain.db, valida los hashes y expone los endpoints REST.
 
   2. Fruteria.WebAgricultor: La interfaz de usuario. Permite a agricultores y transportistas registrar eventos y genera las etiquetas QR.
@@ -33,15 +33,21 @@ Arquitectura del sistema:
 
 Capturas de pantalla:
   1. Panel del Agricultor
+     
   El agricultor registra el origen y cantidad. El sistema genera un QR único.
-  ![Panel del Agricultor](img/captura_agricultor.png)
+  
+  ![Panel Agricultor](img/captura_agricultor.png)
 
   2. Panel del Transportista
+     
   Registro de condiciones del viaje (temperatura, humedad y golpes).
-(Aquí puedes subir una imagen del formulario del camión)
+  
+  ![Panel Transportista](img/captura_transporte.png)
 
-  3. Vista del Cliente (Timeline)
+  3. Vista del Cliente
+     
   Lo que ve el consumidor al escanear el QR.
+  
 (Aquí puedes subir una imagen de la línea de tiempo con las alertas)
 
 
