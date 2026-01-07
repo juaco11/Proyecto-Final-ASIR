@@ -34,27 +34,11 @@ El sistema no es una base de datos normal donde se puede editar y borrar. Funcio
 
 Puntos de acceso (Endpoints)
 La API expone 3 puertas para que las aplicaciones web se conecten:
-  1. Método
-  2. URL
-  3. Descripción
 
-POST
-
-/api/cosecha
-
-Registro inicial. Recibe datos del agricultor y crea el primer bloque de un lote.
-
-POST
-
-/api/transporte
-
-Logística. Recibe datos de sensores del camión y los añade a la cadena.
-
-GET
-
-/api/trazabilidad/{id}
-
-Consulta. Busca toda la historia de un lote específico para mostrarla al cliente.
+Método    URL                      Descripción
+POST      /api/cosecha              Registro inicial. Recibe datos del agricultor y crea el primer bloque de un lote.
+POST      /api/transporte           Logística. Recibe datos de sensores del camión y los añade a la cadena.
+GET       /api/trazabilidad/{id}    Consulta. Busca toda la historia de un lote específico para mostrarla al cliente.
 
 Guía de despliegue rápido
 
