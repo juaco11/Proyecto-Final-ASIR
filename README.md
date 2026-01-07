@@ -1,4 +1,4 @@
-Fruteria.API: Backend de trazabilidad con Blockchain
+FRUTERIA.API: BACKEND DE TRAZABILIDAD CON BLOCKCHAIN
 
 Este es el proyecto de servidor (Backend) para el sistema de trazabilidad de una frutería. Su función es recibir datos de los agricultores y transportistas, y guardarlos de forma segura en una base de datos inmutable usando tecnología Blockchain.
 
@@ -40,22 +40,16 @@ POST      /api/cosecha              Registro inicial. Recibe datos del agriculto
 POST      /api/transporte           Logística. Recibe datos de sensores del camión y los añade a la cadena.
 GET       /api/trazabilidad/{id}    Consulta. Busca toda la historia de un lote específico para mostrarla al cliente.
 
-Guía de despliegue rápido
 
+GUÍA DE DESPLIEGUE RÁPIDO
 Requisitos
-
   Tener instalado el SDK de .NET 8.0.
-
   (Opcional) Visual Studio 2022 o VS Code.
 
 Cómo arrancar el servidor
-
   1. Abre una terminal en la carpeta del proyecto.
-
   2. Ejecuta: dotnet run
-
   3. El servidor arrancará escuchando en http://localhost:5104.
-
   4. La base de datos blockchain.db se creará sola la primera vez.
 
 Comprobación de estado
