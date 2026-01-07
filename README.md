@@ -6,14 +6,14 @@ CosechApp es una plataforma completa de trazabilidad que permite seguir el ciclo
 
 Características principales:
 - Blockchain privado: Implementación propia de una cadena de bloques enlazada criptográficamente para evitar la manipulación de datos.
-- Trazabilidad completa: Registro de eventos de cosecha (origen) y transporte (logística).
+- Trazabilidad completa: Registro de eventos de cosecha y transporte.
 - IoT simulado: Registro de telemetría de transporte (temperatura, humedad y sensores de impacto).
-- Acceso universal: Generación de códigos QR dinámicos para que el cliente final verifique el recorrido del producto desde su móvil.
+- Acceso universal: Generación de códigos QR para que el cliente verifique el recorrido del producto desde su móvil.
 - Alertas inteligentes: Aviso visual al consumidor si el producto ha sufrido golpes o rotura de la cadena de frío.
 
 
 Tecnologías utilizadas:
-  Este proyecto ha sido desarrollado en Visual Studio 2022 siguiendo una arquitectura de N-Capas:
+  Este proyecto ha sido desarrollado en Visual Studio 2022:
   - Backend: ASP.NET Core Web API (.NET 8).
   - Frontend: ASP.NET Core Razor Pages + Bootstrap 5.
   - Base de datos: SQLite + Entity Framework Core.
@@ -36,13 +36,13 @@ Capturas de pantalla:
      
   El agricultor registra el origen y cantidad. El sistema genera un QR único.
   
-  ![Panel Agricultor](captura_agricultor.png)
+  ![Panel Agricultor](Agricultor.png)
 
   2. Panel del Transportista
      
   Registro de condiciones del viaje (temperatura, humedad y golpes).
   
-  ![Panel Transportista](captura_transporte.png)
+  ![Panel Transportista](Transportista.png)
 
   3. Vista del Cliente
      
