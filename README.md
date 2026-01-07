@@ -36,13 +36,13 @@ Capturas de pantalla:
      
   El agricultor registra el origen y cantidad. El sistema genera un QR único.
   
-  ![Panel Agricultor](captura_agricultor.png)
+  ![Panel Agricultor](Agricultor.png)
 
   2. Panel del Transportista
      
   Registro de condiciones del viaje (temperatura, humedad y golpes).
   
-  ![Panel Transportista](captura_transporte.png)
+  ![Panel Transportista](Transportista.png)
 
   3. Vista del Cliente
      
