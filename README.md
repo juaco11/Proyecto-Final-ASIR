@@ -83,3 +83,6 @@ DEPENDENCIAS (NuGet)
 
     - QRCoder: Generación de códigos QR en formato PNG/Base64.
     - System.Net.Http.Json: Extensiones para enviar y recibir objetos JSON fácilmente a través de HTTP.
+
+
+Desarrollado por Joaquín García Carbonell como Proyecto Final de Segundo de ASIR.
