@@ -2,14 +2,12 @@
 
 FRUTERIA.WEBAGRICULTOR (FRONTEND)
 
-
   Fruteria.WebAgricultor es la interfaz de usuario web del sistema CosechApp. Desarrollada con ASP.NET Core Razor Pages, proporciona una experiencia visual amigable para los agricultores, transportistas y clientes finales.
 
   Su objetivo es ocultar la complejidad técnica del Blockchain y ofrecer formularios sencillos e intuitivos, accesibles desde cualquier dispositivo.
 
 
 DISEÑO Y EXPERIENCIA DE USAURIO
-
 
   El proyecto utiliza Bootstrap 5 junto con CSS para crear una página web visual moderna y profesional.
     - Paleta de colores del agricultor: Tonos naranja pastel, crema y marrón, recordando a la tierra y los productos frescos.
@@ -19,8 +17,8 @@ DISEÑO Y EXPERIENCIA DE USAURIO
 
 MAPA DEL SITIO
 
-
   La aplicación web consta de tres secciones principales:
+  
     1. Panel del agricultor 
     Es el punto de entrada para el productor.
       - Función: Registrar el origen de un nuevo lote.
