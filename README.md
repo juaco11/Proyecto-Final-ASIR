@@ -18,7 +18,7 @@ El proyecto contiene las clases que definen la información del sistema.
 
   1. EventoCosecha.cs: Representa el origen de un lote de fruta. Contiene los datos que introduce el agricultor.
 
-PONER IMAGEN DE EVENTOCOSCHA
+![Panel Agricultor](EventoCosecha.png)
 
 
   2. EventoTransporte.cs: Contiene datos de seguimiento y telemetría IoT.
