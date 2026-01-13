@@ -1,6 +1,7 @@
 # Proyecto-Final-ASIR
 
 FRUTERIA.MODELOS: BIBLIOTECA DE CLASES COMPARTIDA
+
 Fruteria.Modelos es el proyecto diccionario de la solución CosechApp. Es una biblioteca de blases (.NET Class Library) que no ejecuta nada por sí misma, sino que define la estructura de los datos que viajan entre el servidor (API) y el cliente (web).
 
 Su función principal es la siguiente: asegura que tanto el agricultor como la base de datos entiendan lo mismo cuando hablan de un Evento de cosecha o un Evento de transporte.
