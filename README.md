@@ -22,16 +22,14 @@ El sistema no es una base de datos normal donde se puede editar y borrar. Funcio
     - Huella anterior: El código del bloque anterior.
 
   ¿Por qué es seguro?
-  Si un hacker malintencionado modifica un dato antiguo en la base de datos, el hash de ese bloque cambiará. Como el bloque siguiente tiene guardado el hash antiguo, la cadena se rompe y el sistema detecta la manipulación.
+  Si un hacker modifica un dato antiguo en la base de datos, el hash de ese bloque cambiará. Como el bloque siguiente tiene guardado el hash antiguo, la cadena se rompe y el sistema detecta la manipulación.
 
-2. Base de datos cpn SQLite
-
+2. Base de datos con SQLite
   Usamos SQLite por sencillez. Toda la base de datos es un único archivo llamado blockchain.db que se crea automáticamente.
+  - Tabla principal: bloques
 
-  Tabla principal: Bloques.
 
-
-Puntos de acceso (Endpoints)
+PUNTOS DE ACCESO 
 La API expone 3 puertas para que las aplicaciones web se conecten:
 
 Método    URL                      Descripción
@@ -42,18 +40,17 @@ GET       /api/trazabilidad/{id}    Consulta. Busca toda la historia de un lote 
 
 GUÍA DE DESPLIEGUE RÁPIDO
 Requisitos
-  Tener instalado el SDK de .NET 8.0.
-  (Opcional) Visual Studio 2022 o VS Code.
+  - Tener instalado el SDK de .NET 8.0
+  - Opcional: Visual Studio 2022 o VS Code
 
 Cómo arrancar el servidor
-  1. Abre una terminal en la carpeta del proyecto.
+  1. Abre una terminal en la carpeta del proyecto
   2. Ejecuta: dotnet run
-  3. El servidor arrancará escuchando en http://localhost:5104.
-  4. La base de datos blockchain.db se creará sola la primera vez.
+  3. El servidor arrancará escuchando en http://localhost:5104
+  4. La base de datos blockchain.db se creará sola la primera vez
 
 Comprobación de estado
-
-  Para ver si funciona sin usar la web, abre en tu navegador: http://localhost:5104/swagger
+  Para ver si funciona sin usar la web, abre en tu navegador: http://localhost:5104/swagger.
   Verás un panel de control técnico (Swagger UI) para probar los endpoints manualmente.
 
 Proyecto realizado como Proyecto Final de ASIR - Trazabilidad y Seguridad en Sistemas.
