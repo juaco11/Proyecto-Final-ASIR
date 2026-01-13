@@ -23,7 +23,7 @@ El proyecto contiene las clases que definen la información del sistema.
 
   2. EventoTransporte.cs: Contiene datos de seguimiento y telemetría IoT.
 
-PONER IMAGEN DE EVENTO TRANSPORTE
+![Panel EventoTransporte](EventoTransporte.png)
 
 
   3. Bloque.cs (Opcional en esta capa): A veces, la estructura del bloque de la cadena también se define aquí para ser compartida, aunque en este proyecto específico se ha mantenido dentro de la     API por simplicidad.
