@@ -7,7 +7,9 @@ Fruteria.Modelos es el proyecto diccionario de la solución CosechApp. Es una bi
 Su función principal es la siguiente: asegura que tanto el agricultor como la base de datos entiendan lo mismo cuando hablan de un Evento de cosecha o un Evento de transporte.
 
 
+
 FICHA TÉCNICA
+
   - Tipo de proyecto: Biblioteca de clases (.dll)
   - Framework: .NET 8.0
   - Dependencias: Ninguna
@@ -15,6 +17,7 @@ FICHA TÉCNICA
 
 
 CONTENIDO: MODELOS DE DATOS
+
 El proyecto contiene las clases que definen la información del sistema.
 
   1. EventoCosecha.cs: Representa el origen de un lote de fruta. Contiene los datos que introduce el agricultor.
@@ -31,6 +34,7 @@ El proyecto contiene las clases que definen la información del sistema.
 
 
 ¿POR QUÉ SEPARAR LOS MODELOS?
+
 Separar las clases en un proyecto Fruteria.Modelos tiene grandes ventajas:
   1. Evita duplicidad: No tienes que copiar y pegar la clase EventoCosecha.cs en la API y luego otra vez en la Web. Escribes el código una vez y lo usas en ambos sitios.
   2. Consistencia: Si cambias algo, el cambio se propaga automáticamente a la API y a la web al recompilar. Nunca tendrás versiones desincronizadas.
