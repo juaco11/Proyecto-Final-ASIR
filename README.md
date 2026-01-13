@@ -15,8 +15,7 @@ Ficha técnica
 ¿Cómo funciona el sistema?
 El sistema no es una base de datos normal donde se puede editar y borrar. Funciona como un libro de registro donde solo se puede escribir.
 
-1. El Concepto de cadena 
-  Cada vez que guardamos un dato (un lote de tomates o un viaje de camión), creamos un bloque.
+1. El Concepto de cadena; Cada vez que guardamos un dato (un lote de tomates o un viaje de camión), creamos un bloque.
   Cada bloque contiene:
     - Datos: La información (kilos, temperatura, origen) en formato JSON.
     - Huella: Un código único calculado con SHA-256. Si cambias un solo bit de los datos, este código cambia radicalmente.
