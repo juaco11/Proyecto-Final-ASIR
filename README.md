@@ -2,7 +2,7 @@
 
 FRUTERIA.MODELOS: BIBLIOTECA DE CLASES COMPARTIDA
 
-    Fruteria.Modelos es el proyecto diccionario de la solución CosechApp. Es una biblioteca de blases (.NET Class Library) que no ejecuta nada por sí misma, sino que define la estructura de los datos que viajan entre el servidor (API) y el cliente (web).
+    Fruteria.Modelos es el proyecto diccionario de la solución CosechApp. Es una biblioteca de blases que no ejecuta nada por sí misma, sino que define la estructura de los datos que viajan entre el servidor y el cliente.
 
     Su función principal es la siguiente: asegura que tanto el agricultor como la base de datos entiendan lo mismo cuando hablan de un Evento de cosecha o un Evento de transporte.
 
@@ -30,7 +30,7 @@ CONTENIDO: MODELOS DE DATOS
 ![Panel EventoTransporte](EventoTransporte.png)
 
 
-    3. Bloque.cs (Opcional en esta capa): A veces, la estructura del bloque de la cadena también se define aquí para ser compartida, aunque en este proyecto específico se ha mantenido dentro de la     API por simplicidad.
+    3. Bloque.cs (Opcional en esta capa): A veces, la estructura del bloque de la cadena también se define aquí para ser compartida, aunque en este proyecto específico se ha mantenido dentro de la API por simplicidad.
 
 
 ¿POR QUÉ SEPARAR LOS MODELOS?
