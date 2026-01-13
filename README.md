@@ -53,4 +53,5 @@ Comprobación de estado
   Para ver si funciona sin usar la web, abre en tu navegador: http://localhost:5104/swagger.
   Verás un panel de control técnico (Swagger UI) para probar los endpoints manualmente.
 
-Proyecto realizado como Proyecto Final de ASIR - Trazabilidad y Seguridad en Sistemas.
+
+Desarrollado por Joaquín García Carbonell como Proyecto Final de Segundo de ASIR.
