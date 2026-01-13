@@ -35,10 +35,10 @@ CONTENIDO: MODELOS DE DATOS
 
 ¿POR QUÉ SEPARAR LOS MODELOS?
 
-  Separar las clases en un proyecto Fruteria.Modelos tiene grandes ventajas:
-    1. Evita duplicidad: No tienes que copiar y pegar la clase EventoCosecha.cs en la API y luego otra vez en la Web. Escribes el código una vez y lo usas en ambos sitios.
-    2. Consistencia: Si cambias algo, el cambio se propaga automáticamente a la API y a la web al recompilar. Nunca tendrás versiones desincronizadas.
-    3. Orden: Mantiene el código limpio. La API solo se preocupa de la lógica, la web solo del diseño, y los modelos solo de los datos.
+    Separar las clases en un proyecto Fruteria.Modelos tiene grandes ventajas:
+        1. Evita duplicidad: No tienes que copiar y pegar la clase EventoCosecha.cs en la API y luego otra vez en la Web. Escribes el código una vez y lo usas en ambos sitios.
+        2. Consistencia: Si cambias algo, el cambio se propaga automáticamente a la API y a la web al recompilar. Nunca tendrás versiones desincronizadas.
+        3. Orden: Mantiene el código limpio. La API solo se preocupa de la lógica, la web solo del diseño, y los modelos solo de los datos.
 
 
 Desarrollado por Joaquín García Carbonell como Proyecto Final de Segundo de ASIR.
