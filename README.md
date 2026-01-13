@@ -4,6 +4,7 @@ FRUTERIA.API: BACKEND DE TRAZABILIDAD CON BLOCKCHAIN
 
     
 FICHA TÉCNICA 
+
     - Rol: Servidor backend
     - Lenguaje: C# 
     - Base de Datos: SQLite 
