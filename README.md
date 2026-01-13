@@ -39,7 +39,6 @@ PUNTOS DE ACCESO
 
 La API expone 3 puertas para que las aplicaciones web se conecten:
 
-
 Método    URL                      Descripción
 POST      /api/cosecha              Registro inicial. Recibe datos del agricultor y crea el primer bloque de un lote.
 POST      /api/transporte           Logística. Recibe datos de sensores del camión y los añade a la cadena.
