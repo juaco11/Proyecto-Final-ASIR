@@ -36,4 +36,4 @@ Separar las clases en un proyecto Fruteria.Modelos tiene grandes ventajas:
   3. Orden: Mantiene el código limpio. La API solo se preocupa de la lógica, la web solo del diseño, y los modelos solo de los datos.
 
 
-Parte de la solución AgroChain - Proyecto ASIR.
+Desarrollado por Joaquín García Carbonell como Proyecto Final de Segundo de ASIR.
