@@ -1,73 +1,149 @@
-# Proyecto-Final-ASIR
-CosechApp: Trazabilidad alimentaria con Blockchain
+# Bitácora de desarrollo semanal: Proyecto AgroChain
 
-CosechApp es una plataforma completa de trazabilidad que permite seguir el ciclo de vida de productos agrícolas desde la cosecha hasta el consumidor final, garantizando la inmutabilidad de los datos mediante tecnología Blockchain.
-
-
-Características principales:
-- Blockchain privado: Implementación propia de una cadena de bloques enlazada criptográficamente para evitar la manipulación de datos.
-- Trazabilidad completa: Registro de eventos de cosecha y transporte.
-- IoT simulado: Registro de telemetría de transporte (temperatura, humedad y sensores de impacto).
-- Acceso universal: Generación de códigos QR para que el cliente verifique el recorrido del producto desde su móvil.
-- Alertas inteligentes: Aviso visual al consumidor si el producto ha sufrido golpes o rotura de la cadena de frío.
+Este documento registra la evolución cronológica del sistema de trazabilidad AgroChain durante sus 12 semanas de desarrollo, detallando las actividades, modificaciones y generaciones de código realizadas semana a semana.
 
 
-Tecnologías utilizadas:
-  Este proyecto ha sido desarrollado en Visual Studio 2022:
-  - Backend: ASP.NET Core Web API (.NET 8).
-  - Frontend: ASP.NET Core Razor Pages + Bootstrap 5.
-  - Base de datos: SQLite + Entity Framework Core.
-  - Librerías clave: QRCoder (Generación de QR).
-  - System.Security.Cryptography (Hashing SHA256).
-  - Newtonsoft.Json / System.Text.Json (Serialización de bloques).
+*Semana 1: Lógica del Blockchain*
+
+Objetivo: Crear el motor criptográfico base.
+
+  - Desarrollo: Implementación de las clases Bloque y Blockchain en una aplicación de consola.
+
+  - Seguridad: Programación del algoritmo de hash SHA-256 para enlazar bloques.
+
+  - Pruebas: Verificación de integridad de la cadena en memoria.
 
 
-Arquitectura del sistema:
-  La solución se divide en tres proyectos:
-  1. Fruteria.API: El cerebro del sistema. Gestiona la base de datos blockchain.db, valida los hashes y expone los endpoints REST.
+*Semana 2: Arquitectura del sistema*
 
-  2. Fruteria.WebAgricultor: La interfaz de usuario. Permite a agricultores y transportistas registrar eventos y genera las etiquetas QR.
+Objetivo: Migrar de consola a una arquitectura web escalable.
 
-  3. Fruteria.Modelos: Biblioteca de clases compartida que define la estructura de datos (EventoCosecha, EventoTransporte, Bloque).
+  - Estructura: División de la solución en capas:
 
+    - Fruteria.Modelos (Biblioteca de clases)
 
-Capturas de pantalla:
-  1. Panel del Agricultor
-     
-  El agricultor registra el origen y cantidad. El sistema genera un QR único.
-  
-  ![Panel Agricultor](Agricultor.png)
+    - Fruteria.API (Servidor)
 
-  2. Panel del Transportista
-     
-  Registro de condiciones del viaje (temperatura, humedad y golpes).
-  
-  ![Panel Transportista](Transportista.png)
+    - Fruteria.WebAgricultor (Cliente)
 
-  3. Vista del Cliente
-     
-  Lo que ve el consumidor al escanear el QR.
-  
-(Aquí puedes subir una imagen de la línea de tiempo con las alertas)
+  - Definición de datos: Creación de los modelos base (EventoCosecha).
 
 
-Instalación y puesta en marcha:
-Sigue estos pasos para ejecutar el proyecto en local:
-  1. Clonar el repositorio: git clone [https://github.com/TU_USUARIO/AgroChain.git](https://github.com/TU_USUARIO/AgroChain.git)
+*Semana 3: Persistencia de datos*
 
-  2. Abrir en Visual Studio: Abre el archivo Fruteria.sln.
-     
-  3. Configurar Inicio múltiple: Haz clic derecho en la Solución -> Propiedades -> Proyecto de inicio -> Varios proyectos de inicio.
-    · Fruteria.API: Iniciar.
-    · Fruteria.WebAgricultor: Iniciar.
+Objetivo: Que los datos sobrevivan al reinicio.
 
-  4. Ejecutar: Pulsa F5. La base de datos se creará automáticamente.
+  - Tecnología: Instalación de Entity Framework Core y SQLite.
+
+  - Implementación:
+
+    - Creación de BlockchainDbContext.
+
+    - Configuración de la inyección de dependencias en Program.cs.
+
+    - Automatización de la creación de la base de datos.
 
 
-Probando con el móvil:
-Para escanear los QR desde un móvil en la misma red Wi-Fi:
-  1. Abre el puerto 5047 (o el que use tu web) en el Firewall de Windows.
-  2. En Index.cshtml.cs, cambia la variable miIp por tu IP local.
-  3. Ya estaría listo para ser escaneado
+*Semana 4: Desarrollo de la API REST*
+
+Objetivo: Exponer la lógica al exterior.
+
+  - Endpoints: Creación de controladores (Controllers).
+
+  - Funcionalidad: Programación del endpoint POST /api/cosecha para recibir datos y firmar bloques.
+
+  - Validación: Pruebas de endpoints usando Swagger UI.
+
+
+*Semana 5: Interfaz del agricultor*
+
+Objetivo: Primera interfaz de usuario utilizable.
+
+  - Tecnología: Desarrollo con Razor Pages.
+
+  - Implementación:
+
+    - Formulario de registro de cosecha.
+
+    - Conexión HTTP (HttpClient) con la API.
+
+    - Feedback visual de éxito/error al usuario.
+
+
+📅 Semana 6: Módulo de Logística (Transporte)
+
+Objetivo: Ampliar la trazabilidad más allá del origen.
+
+Backend:
+
+Nuevo modelo EventoTransporte.
+
+Nuevo endpoint POST /api/transporte con lógica de enlace al bloque anterior.
+
+Frontend: Creación de la página Transporte.cshtml.
+
+📅 Semana 7: Simulación IoT (Internet of Things)
+
+Objetivo: Enriquecer los datos con sensores.
+
+Funcionalidad:
+
+Añadidos campos de telemetría: Temperatura y Humedad.
+
+Implementación de lógica de alertas (Sensor de Golpes booleano).
+
+UI: Diseño de controles específicos (switches, inputs numéricos) para los sensores.
+
+📅 Semana 8: Identidad Digital (Códigos QR) - Parte 1
+
+Objetivo: Generación de etiquetas.
+
+Integración: Instalación de la librería QRCoder.
+
+Prototipo: Implementación inicial donde el QR se generaba en la fase del Agricultor.
+
+Problema Detectado: El flujo no era lógico para la etiqueta final de venta.
+
+📅 Semana 9: Refactorización de Flujo y QR
+
+Objetivo: Corregir el proceso de etiquetado.
+
+Cambio: Se movió la generación del QR al final de la fase de Transporte.
+
+Resultado: El Agricultor ahora genera un ID de lote, y el Transportista genera el QR final que enlaza a la vista del cliente.
+
+📅 Semana 10: Despliegue y Acceso Móvil
+
+Objetivo: Pruebas en entorno real (fuera del PC).
+
+Redes:
+
+Configuración de launchSettings.json para escuchar en 0.0.0.0.
+
+Apertura de puertos en Firewall de Windows (5047/5104).
+
+Túneles: Configuración de Dev Tunnels para permitir acceso público vía 4G/5G.
+
+📅 Semana 11: Monitorización y Transparencia
+
+Objetivo: Demostrar la veracidad del Blockchain.
+
+Desarrollo: Creación del "Monitor de Blockchain" (Monitor.cshtml).
+
+Visualización: Interfaz estilo "técnico" que muestra los hashes en crudo y los enlaces JSON para auditoría en tiempo real.
+
+📅 Semana 12: Diseño Final ("Aesthetic") y Entrega
+
+Objetivo: Pulido visual y documentación.
+
+UI/UX:
+
+Rediseño completo de la interfaz con paletas de colores personalizadas.
+
+Agricultor: Tema Naranja Suave/Pastel.
+
+Transportista: Tema Terracota/Ámbar técnico.
+
+Documentación: Redacción de manuales técnicos, diagramas de arquitectura y este historial de cambios.
 
 Desarrollado por Joaquín García Carbonell como Proyecto Final de Segundo de ASIR.
