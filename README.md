@@ -3,7 +3,7 @@
 Este documento registra la evolución cronológica del sistema de trazabilidad AgroChain durante sus 12 semanas de desarrollo, detallando las actividades, modificaciones y generaciones de código realizadas semana a semana.
 
 
-*Semana 1: Lógica del Blockchain*
+**Semana 1: Lógica del Blockchain**
 
 Objetivo: Crear el motor criptográfico base.
 
