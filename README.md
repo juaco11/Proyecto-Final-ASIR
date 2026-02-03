@@ -14,7 +14,7 @@ Objetivo: Crear el motor criptográfico base.
   - Pruebas: Verificación de integridad de la cadena en memoria.
 
 
-*Semana 2: Arquitectura del sistema*
+**Semana 2: Arquitectura del sistema**
 
 Objetivo: Migrar de consola a una arquitectura web escalable.
 
@@ -29,7 +29,7 @@ Objetivo: Migrar de consola a una arquitectura web escalable.
   - Definición de datos: Creación de los modelos base (EventoCosecha).
 
 
-*Semana 3: Persistencia de datos*
+**Semana 3: Persistencia de datos**
 
 Objetivo: Que los datos sobrevivan al reinicio.
 
@@ -55,7 +55,7 @@ Objetivo: Exponer la lógica al exterior.
   - Validación: Pruebas de endpoints usando Swagger UI.
 
 
-*Semana 5: Interfaz del agricultor*
+**Semana 5: Interfaz del agricultor**
 
 Objetivo: Primera interfaz de usuario utilizable.
 
@@ -70,15 +70,15 @@ Objetivo: Primera interfaz de usuario utilizable.
     - Feedback visual de éxito/error al usuario.
 
 
-📅 Semana 6: Módulo de Logística (Transporte)
+**Semana 6: Módulo de logística (Transporte)**
 
 Objetivo: Ampliar la trazabilidad más allá del origen.
 
-Backend:
+  - Backend:
 
-Nuevo modelo EventoTransporte.
+    - Nuevo modelo EventoTransporte.
 
-Nuevo endpoint POST /api/transporte con lógica de enlace al bloque anterior.
+    - Nuevo endpoint POST /api/transporte con lógica de enlace al bloque anterior.
 
 Frontend: Creación de la página Transporte.cshtml.
 
