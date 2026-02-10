@@ -44,11 +44,11 @@ Objetivo: Que los datos sobrevivan al reinicio.
     - Automatización de la creación de la base de datos.
 
 
-*Semana 4: Desarrollo de la API REST*
+**Semana 4: Desarrollo de la API REST**
 
 Objetivo: Exponer la lógica al exterior.
 
-  - Endpoints: Creación de controladores (Controllers).
+  - Endpoints: Creación de controladores.
 
   - Funcionalidad: Programación del endpoint POST /api/cosecha para recibir datos y firmar bloques.
 
@@ -67,7 +67,7 @@ Objetivo: Primera interfaz de usuario utilizable.
 
     - Conexión HTTP (HttpClient) con la API.
 
-    - Feedback visual de éxito/error al usuario.
+    - Feedback visual de éxito y error al usuario.
 
 
 **Semana 6: Módulo de logística (Transporte)**
@@ -80,70 +80,70 @@ Objetivo: Ampliar la trazabilidad más allá del origen.
 
     - Nuevo endpoint POST /api/transporte con lógica de enlace al bloque anterior.
 
-Frontend: Creación de la página Transporte.cshtml.
+  - Frontend: Creación de la página Transporte.cshtml.
 
-📅 Semana 7: Simulación IoT (Internet of Things)
+**Semana 7: Simulación IoT**
 
 Objetivo: Enriquecer los datos con sensores.
 
-Funcionalidad:
+  - Funcionalidad:
 
-Añadidos campos de telemetría: Temperatura y Humedad.
+    - Añadidos campos de telemetría: temperatura y humedad.
 
-Implementación de lógica de alertas (Sensor de Golpes booleano).
+    - Implementación de lógica de alertas.
 
-UI: Diseño de controles específicos (switches, inputs numéricos) para los sensores.
+  - UI: Diseño de controles específicos para los sensores.
 
-📅 Semana 8: Identidad Digital (Códigos QR) - Parte 1
+**Semana 8: Identidad digital (Códigos QR) - Parte 1**
 
 Objetivo: Generación de etiquetas.
 
-Integración: Instalación de la librería QRCoder.
+  - Integración: Instalación de la librería QRCoder.
 
-Prototipo: Implementación inicial donde el QR se generaba en la fase del Agricultor.
+  - Prototipo: Implementación inicial donde el QR se generaba en la fase del Agricultor.
 
-Problema Detectado: El flujo no era lógico para la etiqueta final de venta.
+  - Problema detectado: El flujo no era lógico para la etiqueta final de venta.
 
-📅 Semana 9: Refactorización de Flujo y QR
+**Semana 9: Refactorización de flujo y QR**
 
 Objetivo: Corregir el proceso de etiquetado.
 
-Cambio: Se movió la generación del QR al final de la fase de Transporte.
+  - Cambio: Se movió la generación del QR al final de la fase de Transporte.
 
-Resultado: El Agricultor ahora genera un ID de lote, y el Transportista genera el QR final que enlaza a la vista del cliente.
+  - Resultado: El Agricultor ahora genera un ID de lote, y el Transportista genera el QR final que enlaza a la vista del cliente.
 
-📅 Semana 10: Despliegue y Acceso Móvil
+**Semana 10: Despliegue y acceso móvil**
 
 Objetivo: Pruebas en entorno real (fuera del PC).
 
-Redes:
+  - Redes:
 
-Configuración de launchSettings.json para escuchar en 0.0.0.0.
+    - Configuración de launchSettings.json para escuchar en 0.0.0.0.
 
-Apertura de puertos en Firewall de Windows (5047/5104).
+    - Apertura de puertos en Firewall de Windows (5047/5104).
 
-Túneles: Configuración de Dev Tunnels para permitir acceso público vía 4G/5G.
+    - Túneles: Configuración de Dev Tunnels para permitir acceso público vía 4G/5G.
 
-📅 Semana 11: Monitorización y Transparencia
+**Semana 11: Monitorización y transparencia**
 
 Objetivo: Demostrar la veracidad del Blockchain.
 
-Desarrollo: Creación del "Monitor de Blockchain" (Monitor.cshtml).
+  - Desarrollo: Creación del Monitor de Blockchain (Monitor.cshtml).
 
-Visualización: Interfaz estilo "técnico" que muestra los hashes en crudo y los enlaces JSON para auditoría en tiempo real.
+  - Visualización: Interfaz estilo técnico que muestra los hashes en crudo y los enlaces JSON para auditoría en tiempo real.
 
-📅 Semana 12: Diseño Final ("Aesthetic") y Entrega
+**Semana 12: Diseño final y entrega**
 
 Objetivo: Pulido visual y documentación.
 
-UI/UX:
+  - UI/UX:
 
-Rediseño completo de la interfaz con paletas de colores personalizadas.
+    - Rediseño completo de la interfaz con paletas de colores personalizadas.
 
-Agricultor: Tema Naranja Suave/Pastel.
+    - Agricultor: Página donde predomina el naranja suave.
 
-Transportista: Tema Terracota/Ámbar técnico.
+    - Transportista: Página donde predomina el marrón claro.
 
-Documentación: Redacción de manuales técnicos, diagramas de arquitectura y este historial de cambios.
+    - Documentación: Redacción de manuales técnicos, diagramas de arquitectura y este historial de cambios.
 
 Desarrollado por Joaquín García Carbonell como Proyecto Final de Segundo de ASIR.
